@@ -32,7 +32,7 @@ const campsiteSlice = createSlice({
     },
     [fetchCampsites.fulfilled]: (state, action) => {
       state.isLoading = false;
-      state.err = "";
+      state.errMsg = "";
       state.campsitesArray = mapImageURL(action.payload);
     },
     [fetchCampsites.rejected]: (state, action) => {

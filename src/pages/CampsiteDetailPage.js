@@ -13,7 +13,7 @@ const CampsiteDetailPage = () => {
   const campsite = useSelector(selectCampsiteById(campsiteId));
 
   const isLoading = useSelector((state) => state.campsites.isLoading);
-  const errMsg = useSelector((state) => state.campsites.errMSg);
+  const errMsg = useSelector((state) => state.campsites.errMsg);
   let content = null;
 
   if (isLoading) {
